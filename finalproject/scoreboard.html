@@ -1,0 +1,187 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ 
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>live Scoreboard</title>
+     <link rel="stylesheet" type="text/css" href="Scoreboard.css">
+ </head>
+ 
+ <body>
+    <!-- <video autoplay muted loop id="video-bg">
+        <source src="VN20240310_110100.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video> -->
+     <main class="table" id="customers_table">
+         <section class="table__header">
+             <h1>Customer's Orders</h1>
+             <div class="input-group">
+                 <input type="search" placeholder="Search Data...">
+                 <img src="images/search.png" alt="">
+             </div>
+             <div class="export__file">
+                 <label for="export-file" class="export__file-btn" title="Export File"></label>
+                 <input type="checkbox" id="export-file">
+                 <div class="export__file-options">
+                     <label>Export As &nbsp; &#10140;</label>
+                     <label for="export-file" id="toPDF">PDF <img src="images/pdf.png" alt=""></label>
+                     <label for="export-file" id="toJSON">JSON <img src="images/json.png" alt=""></label>
+                     <label for="export-file" id="toCSV">CSV <img src="images/csv.png" alt=""></label>
+                     <label for="export-file" id="toEXCEL">EXCEL <img src="images/excel.png" alt=""></label>
+                 </div>
+             </div>
+         </section>
+         <section class="table__body">
+             <table>
+                 <thead>
+                     <tr>
+                         <th> Id <span class="icon-arrow">&UpArrow;</span></th>
+                         <th> Customer <span class="icon-arrow">&UpArrow;</span></th>
+                         <th> Rank <span class="icon-arrow">&UpArrow;</span></th>
+                         <th> Country <span class="icon-arrow">&UpArrow;</span></th>
+                         <th> point <span class="icon-arrow">&UpArrow;</span></th>
+                         <th> Challenges <span class="icon-arrow">&UpArrow;</span></th>
+                     </tr>
+                 </thead>
+                 <tbody>
+                     <tr>
+                         <td> 1 </td>
+                         <td> <img src="" alt="">Sourav</td>
+                         <td> 1st </td>
+                         <td> India </td>
+                         <td>
+                             <p >1100</p>
+                         </td>
+                         <td> <strong>550</strong></td>
+                     </tr>
+                     <tr>
+                         <td> 2 </td>
+                         <td><img src="" alt=""> Jeet Saru </td>
+                         <td> 2nd </td>
+                         <td> Kathmandu </td>
+                         <td>
+                             <p >1024</p>
+                         </td>
+                         <td> <strong>512</strong> </td>
+                     </tr>
+                     <tr>
+                         <td> 3</td>
+                         <td><img src="" alt=""> Sonal Gharti </td>
+                         <td> 3rd</td>
+                         <td>Tokyo </td>
+                         <td>
+                             <p >984</p>
+                         </td>
+                         <td> <strong>492</strong> </td>
+                     </tr>
+                     <tr>
+                         <td> 4</td>
+                         <td><img src="" alt=""> Alson GC </td>
+                         <td> 4th </td>
+                         <td> New Delhi </td>
+                         <td>
+                             <p>980</p>
+                         </td>
+                         <td> <strong>490</strong> </td>
+                     </tr>
+                     <tr>
+                         <td> 5</td>
+                         <td><img src="" alt=""> Sarita Limbu </td>
+                         <td> 5th </td>
+                         <td> Paris </td>
+                         <td>
+                             <p >978</p>
+                         </td>
+                         <td> <strong>489</strong> </td>
+                     </tr>
+                     <tr>
+                         <td> 6</td>
+                         <td><img src="" alt=""> Alex Gonley </td>
+                         <td> 6th </td>
+                         <td> London </td>
+                         <td>
+                             <p >970</p>
+                         </td>
+                         <td> <strong>485</strong> </td>
+                     </tr>
+                     <tr>
+                         <td> 7</td>
+                         <td><img src="" alt=""> Jeet Saru </td>
+                         <td> 7th </td>
+                         <td> New York </td>
+                         <td>
+                             <p>966</p>
+                         </td>
+                         <td> <strong>483</strong> </td>
+                     </tr>
+                     <tr>
+                         <td> 8</td>
+                         <td><img src="" alt=""> Aayat Ali Khan </td>
+                         <td> 8th </td>
+                         <td> Islamabad </td>
+                         <td>
+                             <p >954</p>
+                         </td>
+                         <td> <strong>477</strong> </td>
+                     </tr>
+                     <tr>
+                         <td> 9</td>
+                         <td><img src="" alt=""> Alson GC </td>
+                         <td> Dhaka </td>
+                         <td> Dhaka </td>
+                         <td>
+                             <p >5555</p>
+                         </td>
+                         <td> <strong>258</strong> </td>
+                     </tr>
+                     <tr>
+                        <td> 9</td>
+                        <td><img src="" alt=""> Alson GC </td>
+                        <td> Dhaka </td>
+                        <td> Dhaka </td>
+                        <td>
+                            <p >5555</p>
+                        </td>
+                        <td> <strong>258</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="" alt=""> Alson GC </td>
+                        <td> Dhaka </td>
+                        <td> Dhaka </td>
+                        <td>
+                            <p >5555</p>
+                        </td>
+                        <td> <strong>258</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="" alt=""> Alson GC </td>
+                        <td> Dhaka </td>
+                        <td> Dhaka </td>
+                        <td>
+                            <p >5555</p>
+                        </td>
+                        <td> <strong>258</strong> </td>
+                    </tr>
+                    <tr>
+                        <td> 9</td>
+                        <td><img src="" alt=""> Alson GC </td>
+                        <td> Dhaka </td>
+                        <td> Dhaka </td>
+                        <td>
+                            <p >5555</p>
+                        </td>
+                        <td> <strong>258</strong> </td>
+                    </tr>
+                 </tbody>
+             </table>
+         </section>
+     </main>
+     <script src="script.js"></script>
+ 
+ </body>
+ 
+ </html>
